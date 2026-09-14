@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://c0yo2df6r0wst"]
+
+[ext_resource type="Texture2D" uid="uid://ciaxdojbykyy" path="res://sprites/Arbyz_down.png" id="1_ideak"]
+[ext_resource type="Script" uid="uid://b0tp67jt8kimf" path="res://npcdialogue.gd" id="1_xxcha"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kgtat"]
+size = Vector2(36, 291)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_domab"]
+radius = 74.00676
+
+[node name="NPC" type="CharacterBody2D" unique_id=930321561]
+script = ExtResource("1_xxcha")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1595294923]
+position = Vector2(17, 19)
+texture = ExtResource("1_ideak")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=968543428]
+position = Vector2(16, 71.5)
+shape = SubResource("RectangleShape2D_kgtat")
+
+[node name="InteractionZone" type="Area2D" parent="." unique_id=1450193676]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionZone" unique_id=213177610]
+position = Vector2(8, 22)
+shape = SubResource("CircleShape2D_domab")

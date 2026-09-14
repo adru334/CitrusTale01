@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://dm00tk6elmmuj"]
+
+[ext_resource type="Texture2D" uid="uid://dmgvd5xo0ej50" path="res://background/Menu.png" id="1_h7a2f"]
+[ext_resource type="Script" uid="uid://c0xo6bocj3yj5" path="res://play_btn.gd" id="3_iwfq2"]
+[ext_resource type="Texture2D" uid="uid://my64haeg3qqs" path="res://objects/Play_btn-Photoroom.png" id="3_qoqlk"]
+[ext_resource type="AudioStream" uid="uid://cq02iu1pm6kx6" path="res://audio/Menu_Imbulia (2).mp3" id="4_qoqlk"]
+
+[node name="MainMenu" type="Control" unique_id=1978040100]
+layout_mode = 3
+anchor_left = 0.24700001
+anchor_top = 0.28500003
+anchor_right = 0.77300006
+anchor_bottom = 0.59000003
+offset_left = -0.08000183
+offset_top = 0.19998169
+offset_right = 0.27996826
+offset_bottom = -0.2000122
+pivot_offset = Vector2(22, -5)
+script = ExtResource("3_iwfq2")
+
+[node name="Background" type="TextureRect" parent="." unique_id=2052230706]
+layout_mode = 0
+offset_left = -160.0
+offset_top = -137.0
+offset_right = 480.0
+offset_bottom = 343.0
+pivot_offset = Vector2(320, 241)
+texture = ExtResource("1_h7a2f")
+
+[node name="PlayBtn" type="TextureButton" parent="." unique_id=1026996395]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.16000001
+anchor_right = 0.87900007
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -19.360003
+offset_right = 6.7769775
+offset_bottom = -6.0
+grow_horizontal = 0
+pivot_offset = Vector2(295, 209)
+texture_normal = ExtResource("3_qoqlk")
+stretch_mode = 5
+
+[node name="SettingsBtn" type="TextureButton" parent="." unique_id=748966998]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.18100001
+anchor_right = 0.94600004
+anchor_bottom = 1.0
+offset_left = -43.0
+offset_top = 391.574
+offset_right = -6.802002
+offset_bottom = 410.0
+pivot_offset = Vector2(-1, 6)
+stretch_mode = 0
+
+[node name="SavesBtn" type="TextureButton" parent="." unique_id=498032086]
+layout_mode = 0
+offset_left = 417.0
+offset_top = 388.0
+offset_right = 480.0
+offset_bottom = 478.0
+
+[node name="MenuMusic" type="AudioStreamPlayer2D" parent="." unique_id=340401176]
+stream = ExtResource("4_qoqlk")
+volume_db = 12.635
+parameters/looping = true

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://87bb31sabl0h"]
+
+[ext_resource type="Script" uid="uid://b575okuut14sk" path="res://ui/SimpleDialogue.gd" id="1_dbmtj"]
+
+[node name="DialogueBox" type="Control" unique_id=270134606]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 1.0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_dbmtj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1467798837]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 318.0
+offset_right = 627.0
+offset_bottom = 468.0
+color = Color(0, 0, 0, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=98234299]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -10.0
+offset_right = 616.0
+offset_bottom = 152.0
+
+[node name="SpeakerName" type="Label" parent="ColorRect/VBoxContainer" unique_id=1921782846]
+layout_mode = 2
+
+[node name="ChoicesContainer" type="VBoxContainer" parent="ColorRect/VBoxContainer" unique_id=25436370]
+layout_mode = 2
+
+[node name="DialogueText" type="Label" parent="ColorRect/VBoxContainer" unique_id=842885302]
+layout_mode = 2
+theme_override_colors/font_shadow_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)

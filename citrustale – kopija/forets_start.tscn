@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://bytlg1vqg5yw1"]
+
+[ext_resource type="Texture2D" uid="uid://cs7nsstq5fx4r" path="res://background/background_forest.png" id="1_ard6x"]
+[ext_resource type="PackedScene" uid="uid://bepxlnb4eq1ft" path="res://scenes/player.tscn" id="2_a5ivj"]
+[ext_resource type="PackedScene" uid="uid://chr84c70d32g1" path="res://static_body_2d.tscn" id="3_a5ivj"]
+[ext_resource type="Script" uid="uid://ckpbsuag640qb" path="res://exit_right.gd" id="4_uindx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kgtat"]
+size = Vector2(39, 501)
+
+[node name="ForetsStart" type="Node2D" unique_id=489854813]
+
+[node name="background" type="Sprite2D" parent="." unique_id=1210253092]
+
+[node name="BackgroundForest" type="Sprite2D" parent="." unique_id=1237389190]
+position = Vector2(319, 241)
+texture = ExtResource("1_ard6x")
+
+[node name="Player" parent="." unique_id=1850758920 instance=ExtResource("2_a5ivj")]
+position = Vector2(11, 296)
+
+[node name="StaticBody2D" parent="." unique_id=1233376040 instance=ExtResource("3_a5ivj")]
+position = Vector2(3, -44)
+
+[node name="StaticBody2D2" parent="." unique_id=547451865 instance=ExtResource("3_a5ivj")]
+position = Vector2(66, -43)
+
+[node name="StaticBody2D3" parent="." unique_id=491674827 instance=ExtResource("3_a5ivj")]
+position = Vector2(129, -42)
+
+[node name="StaticBody2D4" parent="." unique_id=187122304 instance=ExtResource("3_a5ivj")]
+position = Vector2(190, -43)
+
+[node name="StaticBody2D5" parent="." unique_id=1328441668 instance=ExtResource("3_a5ivj")]
+position = Vector2(253, -43)
+
+[node name="StaticBody2D6" parent="." unique_id=2098423684 instance=ExtResource("3_a5ivj")]
+position = Vector2(314, -43)
+
+[node name="StaticBody2D7" parent="." unique_id=136512538 instance=ExtResource("3_a5ivj")]
+position = Vector2(375, -43)
+
+[node name="StaticBody2D8" parent="." unique_id=270973181 instance=ExtResource("3_a5ivj")]
+position = Vector2(439, -42)
+
+[node name="StaticBody2D9" parent="." unique_id=1049261091 instance=ExtResource("3_a5ivj")]
+position = Vector2(496, -42)
+
+[node name="StaticBody2D10" parent="." unique_id=449625655 instance=ExtResource("3_a5ivj")]
+position = Vector2(568, -43)
+
+[node name="StaticBody2D11" parent="." unique_id=811283188 instance=ExtResource("3_a5ivj")]
+position = Vector2(5, 75)
+
+[node name="StaticBody2D12" parent="." unique_id=931479939 instance=ExtResource("3_a5ivj")]
+position = Vector2(32, 29)
+
+[node name="StaticBody2D13" parent="." unique_id=1191118733 instance=ExtResource("3_a5ivj")]
+position = Vector2(71, 74)
+
+[node name="StaticBody2D14" parent="." unique_id=2140445783 instance=ExtResource("3_a5ivj")]
+position = Vector2(106, 22)
+
+[node name="StaticBody2D15" parent="." unique_id=1025303626 instance=ExtResource("3_a5ivj")]
+position = Vector2(137, 78)
+
+[node name="StaticBody2D16" parent="." unique_id=1483461071 instance=ExtResource("3_a5ivj")]
+position = Vector2(170, 29)
+
+[node name="StaticBody2D17" parent="." unique_id=2066952511 instance=ExtResource("3_a5ivj")]
+position = Vector2(203, 77)
+
+[node name="StaticBody2D18" parent="." unique_id=1784580424 instance=ExtResource("3_a5ivj")]
+position = Vector2(232, 34)
+
+[node name="StaticBody2D19" parent="." unique_id=1471364574 instance=ExtResource("3_a5ivj")]
+position = Vector2(260, 73)
+
+[node name="StaticBody2D20" parent="." unique_id=2147098121 instance=ExtResource("3_a5ivj")]
+position = Vector2(296, 25)
+
+[node name="StaticBody2D21" parent="." unique_id=1471082181 instance=ExtResource("3_a5ivj")]
+position = Vector2(327, 74)
+
+[node name="StaticBody2D22" parent="." unique_id=2054733267 instance=ExtResource("3_a5ivj")]
+position = Vector2(344, 19)
+
+[node name="StaticBody2D23" parent="." unique_id=343397679 instance=ExtResource("3_a5ivj")]
+position = Vector2(385, 72)
+
+[node name="StaticBody2D24" parent="." unique_id=1854527640 instance=ExtResource("3_a5ivj")]
+position = Vector2(412, 28)
+
+[node name="StaticBody2D25" parent="." unique_id=1824688663 instance=ExtResource("3_a5ivj")]
+position = Vector2(448, 72)
+
+[node name="StaticBody2D26" parent="." unique_id=1494927550 instance=ExtResource("3_a5ivj")]
+position = Vector2(472, 28)
+
+[node name="StaticBody2D27" parent="." unique_id=1860685193 instance=ExtResource("3_a5ivj")]
+position = Vector2(511, 71)
+
+[node name="StaticBody2D28" parent="." unique_id=1359509297 instance=ExtResource("3_a5ivj")]
+position = Vector2(532, 32)
+
+[node name="StaticBody2D29" parent="." unique_id=998385343 instance=ExtResource("3_a5ivj")]
+position = Vector2(575, 73)
+
+[node name="StaticBody2D30" parent="." unique_id=1889567881 instance=ExtResource("3_a5ivj")]
+position = Vector2(587, 20)
+
+[node name="ExitRight" type="Area2D" parent="." unique_id=83917548]
+position = Vector2(3, 4)
+script = ExtResource("4_uindx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitRight" unique_id=1573283095]
+position = Vector2(640.5, 240.5)
+shape = SubResource("RectangleShape2D_kgtat")

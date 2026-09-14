@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://cwfnax8r40400"]
+
+[ext_resource type="Script" uid="uid://4mawq0wjgl4g" path="res://battle.gd" id="1_5g7vw"]
+[ext_resource type="Texture2D" uid="uid://ciaxdojbykyy" path="res://sprites/Arbyz_down.png" id="2_5joda"]
+[ext_resource type="Texture2D" uid="uid://bdjmn7tyi07v2" path="res://objects/Mandarin.png" id="3_gf131"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kgtat"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 3
+
+[node name="BattleScene" type="Node2D" unique_id=1968446596]
+script = ExtResource("1_5g7vw")
+
+[node name="Background" type="ColorRect" parent="." unique_id=2033832796]
+offset_right = 640.0
+offset_bottom = 480.0
+color = Color(0, 0, 0, 1)
+
+[node name="Boss" type="Sprite2D" parent="Background" unique_id=1263124332]
+position = Vector2(312, 63.999992)
+scale = Vector2(2.78125, 2.40625)
+texture = ExtResource("2_5joda")
+
+[node name="BattleBox" type="Node2D" parent="Background" unique_id=1082103630]
+position = Vector2(320, 300)
+
+[node name="Mandarin" type="Sprite2D" parent="Background/BattleBox" unique_id=1273258779]
+texture = ExtResource("3_gf131")
+
+[node name="BorderPanel" type="Panel" parent="Background/BattleBox" unique_id=637878872]
+offset_left = -174.0
+offset_top = -176.0
+offset_right = 166.0
+offset_bottom = 113.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kgtat")
+
+[node name="Attacks" type="Node2D" parent="Background" unique_id=1882522453]
+
+[node name="UI" type="CanvasLayer" parent="Background" unique_id=1303790483]
+
+[node name="Buttons" type="HBoxContainer" parent="Background/UI" unique_id=712840347]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FightBtn" type="Button" parent="Background/UI/Buttons" unique_id=171219553]
+layout_mode = 2
+
+[node name="ActBtn" type="Button" parent="Background/UI/Buttons" unique_id=923457756]
+layout_mode = 2
+
+[node name="ItemBtn" type="Button" parent="Background/UI/Buttons" unique_id=378645299]
+layout_mode = 2
+
+[node name="MercyBtn" type="Button" parent="Background/UI/Buttons" unique_id=1694069937]
+layout_mode = 2

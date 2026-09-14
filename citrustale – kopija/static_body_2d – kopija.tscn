@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://hkkqfd6hwc5"]
+
+[ext_resource type="Texture2D" uid="uid://sjemul71gl5c" path="res://objects/tree_spruce.png" id="1_yjt17"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kgtat"]
+size = Vector2(62, 119)
+
+[node name="StaticBody2D" type="StaticBody2D" unique_id=1233376040]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=668868542]
+position = Vector2(30, 107.5)
+shape = SubResource("RectangleShape2D_kgtat")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1131226363]
+position = Vector2(30, 110.5)
+scale = Vector2(0.90625, 0.8828125)
+texture = ExtResource("1_yjt17")
